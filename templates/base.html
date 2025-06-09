@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <nav class="top-nav">
+            <ul>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('projects') }}">Projects</a></li>
+                <li><a href="{{ url_for('resume') }}">Resume</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="spotify-layout">
+        <aside class="side-nav">
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('library') }}">Library</a></li>
+                <li><a href="{{ url_for('playlists') }}">My Playlists</a></li>
+                <li><a href="{{ url_for('resume') }}">Resume</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            {% block content %}{% endblock %}
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
