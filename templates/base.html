@@ -23,6 +23,18 @@
         </main>
     </div>
 
+    <footer class="player-bar">
+        <div class="player-left">
+            <img src="{{ cover_image }}" alt="{{ page_name }} cover" class="player-cover">
+        </div>
+        <div class="player-center">
+            <button id="play-button" class="play-button">&#9654;</button>
+        </div>
+        <div class="player-right">
+            <span id="current-song">{{ page_name }}</span>
+        </div>
+    </footer>
+
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>
