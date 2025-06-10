@@ -48,7 +48,11 @@
             <img src="{{ cover_image }}" alt="{{ page_name }} cover" class="player-cover">
         </div>
         <div class="player-center">
-            <button id="play-button" class="play-button">&#9654;</button>
+            <button class="control-button" id="shuffle-button">&#128256;</button>
+            <button class="control-button" id="rewind-button">&#9198;</button>
+            <button id="play-button" class="control-button play-button">&#9654;</button>
+            <button class="control-button" id="forward-button">&#9197;</button>
+            <button class="control-button" id="replay-button">&#128257;</button>
         </div>
         <div class="player-right">
             <span id="current-song">{{ page_name }}</span>
