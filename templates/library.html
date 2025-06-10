@@ -1,4 +1,18 @@
 {% extends 'base.html' %}
 {% block content %}
 <h1>Library</h1>
+<div class="card-grid">
+    <div class="playlist-card">
+        <img src="{{ url_for('static', filename='images/cover_placeholder.svg') }}" alt="Item 1">
+        <div class="card-title">Item 1</div>
+    </div>
+    <div class="playlist-card">
+        <img src="{{ url_for('static', filename='images/cover_placeholder.svg') }}" alt="Item 2">
+        <div class="card-title">Item 2</div>
+    </div>
+    <div class="playlist-card">
+        <img src="{{ url_for('static', filename='images/cover_placeholder.svg') }}" alt="Item 3">
+        <div class="card-title">Item 3</div>
+    </div>
+</div>
 {% endblock %}

@@ -11,11 +11,31 @@
     <div class="spotify-layout">
         <aside class="side-nav">
             <ul>
-                <li><a href="{{ url_for('home') }}">Home</a></li>
-                <li><a href="{{ url_for('library') }}">Library</a></li>
-                <li><a href="{{ url_for('playlists') }}">My Playlists</a></li>
-                <li><a href="{{ url_for('resume') }}">Resume</a></li>
-                <li><a href="{{ url_for('contact') }}">Contact Me</a></li>
+                <li>
+                    <a href="{{ url_for('home') }}">
+                        <img class="nav-icon" src="{{ url_for('static', filename='images/icon_home.svg') }}" alt="Home icon"> Home
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url_for('library') }}">
+                        <img class="nav-icon" src="{{ url_for('static', filename='images/icon_library.svg') }}" alt="Library icon"> Library
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url_for('playlists') }}">
+                        <img class="nav-icon" src="{{ url_for('static', filename='images/icon_playlists.svg') }}" alt="Playlists icon"> My Playlists
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url_for('resume') }}">
+                        <img class="nav-icon" src="{{ url_for('static', filename='images/icon_resume.svg') }}" alt="Resume icon"> Resume
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url_for('contact') }}">
+                        <img class="nav-icon" src="{{ url_for('static', filename='images/icon_contact.svg') }}" alt="Contact icon"> Contact Me
+                    </a>
+                </li>
             </ul>
         </aside>
         <main class="content">
