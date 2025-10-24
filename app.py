@@ -6,10 +6,10 @@ from flask import Flask, render_template, url_for
 COVER_IMAGES = {
     'Home': 'cover_placeholder.svg',
     'About': 'cover_placeholder.svg',
-    'Projects': 'cover_placeholder.svg',
+    #'Projects': 'cover_placeholder.svg',
     'Resume': 'cover_placeholder.svg',
     'Contact Me': 'cover_placeholder.svg',
-    'Library': 'cover_placeholder.svg',
+    #'Library': 'cover_placeholder.svg',
     'My Playlists': 'cover_placeholder.svg'
 }
 
@@ -55,21 +55,24 @@ def contact():
         cover_image=url_for('static', filename=f"images/{COVER_IMAGES['Contact Me']}")
     )
 
-@app.route('/library')
-def library():
-    return render_template(
-        'library.html',
-        page_name='Library',
-        cover_image=url_for('static', filename=f"images/{COVER_IMAGES['Library']}")
-    )
+# @app.route('/library')
+# def library():
+#     return render_template(
+#         'library.html',
+#         page_name='Library',
+#         cover_image=url_for('static', filename=f"images/{COVER_IMAGES['Library']}")
+#     )
 
-@app.route('/playlists')
-def playlists():
-    return render_template(
-        'playlists.html',
-        page_name='My Playlists',
-        cover_image=url_for('static', filename=f"images/{COVER_IMAGES['My Playlists']}")
-    )
+# @app.route('/playlists')
+# def playlists():
+#     return render_template(
+#         'playlists.html',
+#         page_name='My Projects',
+#         cover_image=url_for('static', filename=f"images/{COVER_IMAGES['My Playlists']}")
+#     )
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+
+

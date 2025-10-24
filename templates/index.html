@@ -1,4 +1,32 @@
 {% extends 'base.html' %}
 {% block content %}
-<h1>Welcome to my portfolio</h1>
+
+<!-- Bio Section -->
+<section class="bio-section">
+    <h1>Welcome to my portfolio</h1>
+    <p>
+        Hi! I'm <strong>Aditi Patil</strong> — a Data Scientist at UBS with a background in AI/ML, full-stack development, and 
+        human-centered computing. I’ve built intelligent systems like RAG chatbots, predictive machine learning pipelines, 
+        and scalable AI-driven tools used by thousands of users. I am passionate about building impactful, user-focused 
+        technology that blends data, design, and innovation.
+    </p>
+</section>
+
+<!-- Projects Section -->
+<h2>My Projects</h2>
+<div class="card-grid">
+    <a href="https://github.com/adpat0324" target="_blank" class="playlist-card">
+        <img src="{{ url_for('static', filename='images/cover_placeholder.svg') }}" alt="Project 1">
+        <div class="card-title">Project 1</div>
+    </a>
+    <a href="https://github.com/adpat0324" target="_blank" class="playlist-card">
+        <img src="{{ url_for('static', filename='images/cover_placeholder.svg') }}" alt="Project 2">
+        <div class="card-title">Project 2</div>
+    </a>
+    <a href="https://github.com/adpat0324" target="_blank" class="playlist-card">
+        <img src="{{ url_for('static', filename='images/cover_placeholder.svg') }}" alt="Project 3">
+        <div class="card-title">Project 3</div>
+    </a>
+</div>
+
 {% endblock %}
